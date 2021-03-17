@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>COVID</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/all">All country</a>
+            <a href="/myrec">My Record</a>
+    
+        </nav>
+        </header>
+    <h1>All</h1>
+    <% data.map(data2=>{%>
+        <div>
+            <p>contry : <%= data2.Country%></p>
+            <p>conformid cases : <%= data2.TotalConfirmed%></p>
+            <p>conformid cases : <%= data2.TotalDeaths%></p>
+            <p>conformid cases : <%= data2.TotalRecovered%></p>
+            <p>data : <%= data2.Date%></p>
+        </div>
+
+        <form action="/addtodb" method="get">
+            <input type="hidden" name="name" value="<%= data2.Country%>">
+            <input type="hidden" name="date" value="<%= data2.TotalConfirmed%>">
+            <input type="hidden" name="casesc" value="<%= data2.TotalDeaths%>">
+            <input type="hidden" name="casesd" value="<%= data2.TotalRecovered%>">
+            <input type="hidden" name="casesr" value="<%= data2.Date%>">
+            <input type="submit" value="add to db">
+        </form>
+
+        <br><br>
+    <%})%>
+
+</body>
+</html>

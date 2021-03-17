@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>COVID</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/all">All country</a>
+        <a href="/myrec">My Record</a>
+
+    </nav>
+    </header>
+    <h1>World Total Statistics</h1>
+    <h1>Total Confirmed: <%= data.TotalConfirmed%></h1>
+    <h1>Total Deaths: <%= data.TotalDeaths%></h1>
+    <h1>Total Recovered: <%= data.TotalRecovered%></h1>
+
+    <h1>Get From Contry</h1>
+
+    <form action="/getCountryResult" method="GET">
+        <input name="name" type="text" placeholder="name">
+        <input name="from" type="date" placeholder="from">
+        <input name="to" type="date" placeholder="to">
+        <input type="submit" value="submit">
+    </form>
+
+
+
+
+</body>
+</html>

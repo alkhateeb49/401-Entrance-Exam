@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>COVID</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/all">All country</a>
+            <a href="/myrec">My Record</a>
+    
+        </nav>
+        </header>
+    <h1>Total Statistics</h1>
+    <% data.map(data2=>{%>
+        <div>
+            <p>contry : <%= data2.Cases%></p>
+            <p>conformid cases : <%= data2.Cases%></p>
+            <p>data : <%= data2.Date%></p>
+        </div>
+    <%})%>
+
+</body>
+</html>
