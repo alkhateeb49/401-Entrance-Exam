@@ -9,26 +9,31 @@
 </head>
 <body>
     <header>
+        <section id='sect'>
+            <h1>COVID 19</h1>
+        </section>
     <nav>
         <a href="/">Home</a>
         <a href="/all">All country</a>
         <a href="/myrec">My Record</a>
-
     </nav>
     </header>
+    <div class="divv">
     <h1>World Total Statistics</h1>
     <h1>Total Confirmed: <%= data.TotalConfirmed%></h1>
     <h1>Total Deaths: <%= data.TotalDeaths%></h1>
     <h1>Total Recovered: <%= data.TotalRecovered%></h1>
+    <div>
 
     <h1>Get From Contry</h1>
-
+    <div class="divvv">
     <form action="/getCountryResult" method="GET">
         <input name="name" type="text" placeholder="name">
         <input name="from" type="date" placeholder="from">
         <input name="to" type="date" placeholder="to">
         <input type="submit" value="submit">
     </form>
+    </div>
 
 
 

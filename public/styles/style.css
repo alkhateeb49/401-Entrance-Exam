@@ -1,0 +1,34 @@
+nav{
+    text-align: center;
+    height: 55px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+nav a{
+    font-size:30px;
+}
+body{
+    margin: 0px;
+}
+#sect{
+    text-align: center;
+    background-color: rgb(108, 108, 255);
+    height:200px;
+}
+#sect h1{
+    padding-top: 70px;
+}
+.divv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(206, 156, 92);
+    margin: 5px;
+
+
+}
+.divvv{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}

@@ -16,13 +16,16 @@
     
         </nav>
         </header>
+        
     <h1>Total Statistics</h1>
     <% data.map(data2=>{%>
+        <div class="divv">
         <div>
             <p>contry : <%= data2.Cases%></p>
             <p>conformid cases : <%= data2.Cases%></p>
             <p>data : <%= data2.Date%></p>
         </div>
+    </div>
     <%})%>
 
 </body>
